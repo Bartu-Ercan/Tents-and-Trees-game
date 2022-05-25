@@ -7,7 +7,7 @@ surface = pygame.display.set_mode((600, 400))
 WIDTH = 550
 Background_color = (251,247,245)
 Menu_Background_color = (0,0,0)
-original_grid_element_color = (52, 31, 151)
+
 
 def menu():
     pygame.init()
@@ -28,6 +28,7 @@ def menu():
     menuwin.blit(playbutton , (137.5,100))
     menuwin.blit(quitbutton , (137.5,300))
     pygame.display.update()
+
 
 
     while True:
@@ -80,6 +81,9 @@ def rules():
                     time.sleep(0.1)
                     menu()
 
+                    
+                    
+                    
 def main():
     pygame.init()
     win = pygame.display.set_mode((WIDTH , WIDTH))
